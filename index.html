@@ -159,6 +159,7 @@ const firebaseConfig = {
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
+ const messaging = getMessaging(firebaseApp);
 const auth = getAuth(firebaseApp);
 const db = getFirestore(firebaseApp);
 const provider = new GoogleAuthProvider();
